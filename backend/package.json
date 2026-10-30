@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node -e \"const fs=require('fs'); if(fs.existsSync('src')){fs.rmSync('dist', {recursive: true, force: true}); fs.cpSync('src', 'dist', {recursive: true}); console.log('Successfully copied src to dist');} else {console.error('Error: src folder not found!');}\"",
+    "build": "node build.js",
     "dev": "node --watch src/index.js",
-    "start": "node src/index.js"
+    "start": "node"
   },
   "keywords": [],
   "author": "",
